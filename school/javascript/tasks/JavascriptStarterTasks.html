@@ -1,11 +1,14 @@
 <script defer src="./ListItemsToLinks.js"></script>
 <script defer src="./DynamicInputFields.js"></script>
 <script defer src="./LicensePlateValidation.js"></script>
+<script defer src="./PuzzleScript.js"></script>
+<link rel="stylesheet" href="puzzle.css">
 
 <!DOCTYPE html>
 <html>
 <head>
   <title>JavaScript-opgaver</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
   <div id="listItemsTask">
@@ -31,10 +34,17 @@
   </div>
 
   <div id="licensePlateInputField">
-      <h1>Opgave 3: License Plate InputField</h1>
-      <div>
-        <input type="text"></input>
-      </div>
+    <h1>Opgave 3: License Plate InputField</h1>
+    <div>
+      <input type="text" id="licensePlate"></input>
+    </div>
+    <div id="msg"></div>
+  </div>
+
+  <div id="slidingPuzzle">
+    <h1>Opgave 4: Sliding Puzzle Game</h1>
+    <div id="board"></div>
+    <h3>Turns: <span id="turns">0</span></h3>
   </div>
 </body>
 </html>

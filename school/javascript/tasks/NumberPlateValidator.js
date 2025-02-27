@@ -1,10 +1,9 @@
-input = document.getElementById("licensePlate");
+input = document.getElementById("input");
 msg = document.getElementById("msg");
 
 input.addEventListener("keyup", function(){
     let text = input.value;
     let message = "";
-
     if(VerifyLetters(text) && VerifyDigits(text)){
         if(text.length == 7)
             message= "Good Job buddy, want a treat?"
@@ -26,6 +25,7 @@ function VerifyLetters(text){
         if(!("A"<=text[i] && text[i]<="Z" || "a"<=text[i] && text[i]<="z"))
             return false;
     return true;
+    
 }
 
 function VerifyDigits(text){
@@ -33,4 +33,5 @@ function VerifyDigits(text){
         if(!("0"<=text[i] && text[i]<="9"))
             return false;
     return true;
+    
 }
