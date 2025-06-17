@@ -1,6 +1,8 @@
 <script defer src="./listItemsToLinks.js"></script>
 <script defer src="./dynamicInputFields.js"></script>
 <script defer src="./licensePlateValidation.js"></script>
+<script defer src="./footnotes.js"></script>
+<script defer src="./hoverHide.js"></script>
 
 <!DOCTYPE html>
 <html>
@@ -39,10 +41,28 @@
     </div>
   </div>
 
-  <div id="slidingPuzzle">
-    <h1>Opgave 4: Sliding Puzzle Game</h1>
-    <div id="board"></div>
-    <h3>Turns: <span id="turns">0</span></h3>
+  <div id="footnotes">
+    <div>
+      <h1>Opgave 7: Footnotes</h1>
+      <button id="footnoteButton" type="button">Click me to convert to footnotes</button>
+    </div>
+    <div>
+      <textarea>There are footnotes below me somewhere</textarea>
+    </div>
+    <div>
+      <textarea data-footnote="">I am the <i>first</i> footnote</textarea>
+    </div>
+    <div>
+      <textarea>I am not a footnote</textarea>
+    </div>
+    <div>
+      <textarea data-footnote="">I am the <i>second</i> footnote</textarea>
+    </div>
+  </div>
+
+  <div id="hoverHide">
+    <h1>Opgave 8: Hover Hide</h1>
+    <img src="./cs_joke.jpg">
   </div>
 </body>
 </html>
