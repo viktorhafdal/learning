@@ -1,0 +1,24 @@
+#licensePlate {
+  outline: none;
+  box-shadow: none;
+}
+
+.wrong {
+  border: 2px solid red;
+  border-radius: 1px;
+}
+
+.wrong:focus {
+  border: 2px solid red;
+  border-radius: 1px;
+}
+
+.correct {
+  border: 2px solid green;
+  border-radius: 1px;
+}
+
+.correct:focus {
+  border: 2px solid green;
+  border-radius: 1px;
+}

@@ -1,0 +1,49 @@
+<script defer src="./listItemsToLinks.js"></script>
+<script defer src="./dynamicInputFields.js"></script>
+<script defer src="./licensePlateValidation.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript-opgaver</title>
+  <link rel='stylesheet' href="./licenseplate.css"
+</head>
+<body>
+  <div id="listItemsTask">
+    <h1>Opgave 1: List Items to Links</h1>
+    <ul>
+      <li>http://dr.dk</li>
+      <li>http://tv2.dk</li>
+      <li>Hello World!</li>
+      <li>http://eamv.dk</li>
+    </ul>
+  </div>
+
+  <div id="dynamicInputTask">
+      <h1>Opgave 2: Dynamic Number of InputFields</h1>
+      <div>
+        <a href="#" onclick="lessFields();">Less</a>
+        <a href="#" onclick="moreFields();">More</a>
+      </div>
+      <br />
+      <div>
+        <input type="text" name="Input 1"></input>
+      </div>
+  </div>
+
+  <div id="licensePlateInputField">
+    <h1>Opgave 3: License Plate InputField</h1>
+    <input type="text" id="licensePlate"></input>
+    <div id="msg">
+      <p id="msgField"></p>
+    </div>
+  </div>
+
+  <div id="slidingPuzzle">
+    <h1>Opgave 4: Sliding Puzzle Game</h1>
+    <div id="board"></div>
+    <h3>Turns: <span id="turns">0</span></h3>
+  </div>
+</body>
+</html>
+
