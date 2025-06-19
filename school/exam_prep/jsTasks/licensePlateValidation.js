@@ -1,8 +1,8 @@
 const licensePlateSection = document.querySelector('#licensePlateInputField') // to only operate in the licenseplate section
 const inputField = licensePlateSection.querySelector('#licensePlate')
-const msgField = licensePlateSection.querySelector('#msgDiv #msgField')
+const msgField = licensePlateSection.querySelector('#msg #msgField')
 
-inputField.addEventListener('input', function() {
+inputField.addEventListener('input', function () {
   let text = inputField.value
 
   if (text === '' || text === undefined || text === null) {
