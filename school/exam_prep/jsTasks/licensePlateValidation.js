@@ -26,7 +26,11 @@ inputField.addEventListener('input', function () {
     return
   }
 
-  CorrectInput('Correct.')
+  if (text.length < 7) {
+    CorrectInput('Correct, but still too short.')
+  } else {
+    CorrectInput('Correct.')
+  }
 })
 
 function VerifyLetters(text) {
