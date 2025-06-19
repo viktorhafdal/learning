@@ -47,7 +47,7 @@ function findFootnotes() {
 function showFootnote(footnoteHtml, e) {
   footnotePopupDiv.innerHTML = footnoteHtml
   footnotePopupDiv.style.position = 'absolute'
-  footnotePopupDiv.style.top = `${e.clientY}px`
-  footnotePopupDiv.style.left = `${e.clientX}px`
+  footnotePopupDiv.style.top = `${e.pageY}px`
+  footnotePopupDiv.style.left = `${e.pageX}px`
   footnotePopupDiv.style.visibility = 'visible'
 }
