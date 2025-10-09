@@ -1,4 +1,4 @@
-﻿module Tests
+﻿module LuciansLusciousLasagnaTest
 
 open Xunit
 
