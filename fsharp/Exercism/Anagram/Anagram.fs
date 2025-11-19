@@ -2,16 +2,16 @@
 
 let findAnagrams (sources: string list) (target: string): string list =
   let normalize (word: string) =
-    word.ToLower()
-    |> Seq.sort
-    |> Seq.toArray
-    |> System.String
+    word.ToLower().ToCharArray()
+    |> Array.sort
+    |> string
 
   let targetLower = target.ToLower()
   let targetSorted = normalize target
 
   sources
-  |> List.filter (fun candidate -> 
+  |> List.filter(fun candidate -> 
     let candidateLower = candidate.ToLower()
     candidateLower <> targetLower
     && normalize candidate = targetSorted)
+

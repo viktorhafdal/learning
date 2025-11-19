@@ -6,7 +6,7 @@ let message (logLine: string): string =
 let logLevel (logLine: string): string =
   logLine
   |> fun s -> s.Substring(s.IndexOf('[') + 1, s.IndexOf(']') - (s.IndexOf('[') + 1))
-  |> fun s -> s.ToLower()
+  |> _.ToLower() // _ replaces `fun s -> s`
 
 let reformat (logLine: string): string =
-  sprintf "%s (%s)" (message logLine) (logLevel logLine)
+  $"{message logLine} ({logLevel logLine})"
